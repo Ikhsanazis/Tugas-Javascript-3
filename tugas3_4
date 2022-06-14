@@ -1,6 +1,15 @@
 const fetch = (url) =>
   import("node-fetch").then(({ default: fetch }) => fetch(url));
 
+const res = await fetch("https://jsonplaceholder.typicode.com/users");
+const data =await  res.json();
+data.forEach((e) => {
+  console.log(e.name);
+});
+
+const fetch = (url) =>
+  import("node-fetch").then(({ default: fetch }) => fetch(url));
+
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((res) => console.log(res))
   .then((data) => console.log(data));
