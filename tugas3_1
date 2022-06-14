@@ -29,6 +29,7 @@ const cekHariKerja = (day) => {
   cek("selasa");
 
 //perbedaan utama terletak pada structure dan fungsi dari then dan try
+//then-catch digunakan pada promise sedangkan try catch digunakan pada asyn await
 //then methode dapat digunakan sebagai pengganti callback ketika value pada promise bernilai resolve, 
-//sedangkan catch digunakan sebagai error. perbedaan then-catch dengan try-catch adalah then catch digunkan pada promise 
-//sedangkan try catch digunkan pada asyn/await
+//sedangkan catch digunakan sebagai error.
+//pada try catch terdapat pengkondisian dan error handling
